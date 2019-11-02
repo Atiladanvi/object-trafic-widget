@@ -1,8 +1,8 @@
-# object-trafic-widget 0.1.0
+# vue-object-trafic-widget 0.1.0
 
 ## Project setup
 ```
-npm install object-trafic-widget
+npm install vue-object-trafic-widget
 ```
 
 ###  Import and use

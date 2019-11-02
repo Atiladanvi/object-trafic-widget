@@ -69,7 +69,7 @@ export default {
             label: this.labelName,
             backgroundColor: this.background,
             data: this.data
-          }
+          },
         ]
       },{
         responsive: true,

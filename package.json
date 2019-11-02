@@ -1,7 +1,16 @@
 {
   "name": "vue-object-trafic-widget",
-  "version": "0.1.0",
-  "private": true,
+  "description": "The simple widget graph",
+  "version": "0.1.1",
+  "author": {
+    "name": "Atila Silva",
+    "email": "atila.danvi@outlook.com"
+  },
+  "keywords": [
+    "stats",
+    "graph"
+  ],
+  "private": false,
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
