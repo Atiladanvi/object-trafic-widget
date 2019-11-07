@@ -1,4 +1,4 @@
-# vue-object-trafic
+# vue-object-trafic 0.1.0
 
 ## Project setup
 ```
@@ -11,11 +11,17 @@ In your main.js
 import Vue from 'vue';
 import ObjectTrafic from 'vue-object-trafic'
 
-Vue.use(ObjectTrafic , { lang: 'pt' })
+Vue.use(ObjectTrafic , {
+  lang: 'pt' ,
+  api:{
+      baseUrl: '',
+      headers: {}
+    }
+})
 ```
 In your component
 ```vue
- <object-trafic-lite :data="[1,2,3,4]"></object-trafic-lite>
+ <object-trafic-lite model="user" label="Users"></object-trafic-lite>
 ```
 ### Licence
 MIT
