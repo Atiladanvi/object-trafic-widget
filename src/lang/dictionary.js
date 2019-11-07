@@ -13,12 +13,11 @@ const Dictionary = {
     return eval(this.languages[this.lang])
   },
 
-  getLabels: function (label, type = 'name') {
-    return this.getLang().labels[label][type]
-  },
-
-  translate: function (word) {
-    return this.getLang().words[word]
+  translate: function (type, customCase, name) {
+    let t = this.getLang().labels[type][customCase].filter(el => {
+      return el[name]
+    })
+   return t[0][name]
   },
 
 }

@@ -1,5 +1,5 @@
 {
-  "name": "vue-object-trafic-widget",
+  "name": "vue-object-trafic",
   "description": "The simple widget graph",
   "version": "0.1.1",
   "author": {
@@ -21,6 +21,7 @@
     "access": "public"
   },
   "dependencies": {
+    "axios": "^0.19.0",
     "chart.js": "^2.9.1",
     "core-js": "^3.3.2",
     "vue": "^2.6.10",

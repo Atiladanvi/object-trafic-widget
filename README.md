@@ -1,21 +1,21 @@
-# vue-object-trafic-widget 0.1.0
+# vue-object-trafic
 
 ## Project setup
 ```
-npm install vue-object-trafic-widget
+npm install vue-object-trafic
 ```
 
 ###  Import and use
 In your main.js 
 ```javascript
 import Vue from 'vue';
-import ObjectTrafic from 'object-trafic-widget'
+import ObjectTrafic from 'vue-object-trafic'
 
 Vue.use(ObjectTrafic , { lang: 'pt' })
 ```
 In your component
 ```vue
- <graph-widget-simple :data="[1,2,3,4]"></graph-widget-simple>
+ <object-trafic-lite :data="[1,2,3,4]"></object-trafic-lite>
 ```
 ### Licence
 MIT

@@ -1,57 +1,52 @@
 export default {
-  words: {
-    objects: 'Objects'
-  },
   labels: {
     days: {
       name: [
-        'Sunday' ,
-        'Monday' ,
-        'Tuesday' ,
-        'Wednesday' ,
-        'Thursday',
-        'Friday' ,
-        'Saturday'
+        {Sunday: 'Sunday'},
+        {Monday: 'Monday'},
+        {Tuesday: 'Tuesday'},
+        {Wednesday: 'Wednesday'},
+        {Thursday: 'Thursday'},
+        {Friday: 'Friday'},
+        {Saturday: 'Saturday'},
       ],
       abreviation: [
-        'Mo',
-        'Tu',
-        'We',
-        'Th',
-        'Fr',
-        'Sa',
-        'Su'
+        {Sum: 'Sum'},
+        {Mon: 'Mon'},
+        {Wed: 'Wed'},
+        {Thu: 'Thu'},
+        {Fri: 'Fri'},
+        {Sat: 'Sat'}
       ]
     },
     months: {
       name: [
-        'January',
-        'February',
-        'March',
-        'April',
-        'May',
-        'June',
-        'July',
-        'August',
-        'September',
-        'October',
-        'November',
-        'December'
+        {January: 'January'},
+        {February: 'February'},
+        {March: 'March'},
+        {April: 'April'},
+        {May: 'May'},
+        {June: 'June'},
+        {July: 'July'},
+        {August: 'August'},
+        {September: 'September'},
+        {October: 'October'},
+        {November: 'November'},
+        {December: 'December'},
       ],
       abreviation: [
-        'Jan',
-        'Fev',
-        'Mar',
-        'Apr',
-        'May',
-        'Jun',
-        'Jul',
-        'Aug',
-        'Sept',
-        'Oct',
-        'Nov',
-        'Dec'
+        {Jan: 'Jan'},
+        {Feb: 'Feb'},
+        {Mar: 'Mar'},
+        {May: 'May'},
+        {Jun: 'Jun'},
+        {Jul: 'Jul'},
+        {Aug: 'Aug'},
+        {Sep: 'Sep'},
+        {Oct: 'Oct'},
+        {Nov: 'Nov'},
+        {Dec: 'Dec'}
       ]
     }
-  },
+  }
 }

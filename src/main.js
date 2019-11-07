@@ -3,7 +3,7 @@ import App from './App.vue'
 
 import ObjectTrafic from './index'
 
-Vue.use(ObjectTrafic , { lang: 'pt' })
+Vue.use(ObjectTrafic , { lang: 'pt' , api:{ baseUrl: ''} })
 
 Vue.config.productionTip = false
 

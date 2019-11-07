@@ -1,15 +1,18 @@
 
-import GraphWidgetSimple from './components/GraphWidgetSimple.js'
+import ObjectTraficLite from './components/ObjectTraficLite'
 
 const ObjectTrafic = {
 
   install(Vue, options) {
 
-    const { lang } = options
+    const { lang, api } = options
 
-    Vue.prototype.$otwLang = lang
+    Vue.prototype.$otLang = lang
 
-    Vue.component('graph-widget-simple', GraphWidgetSimple);
+    Vue.prototype.$otBaseUrl = api.baseUrl
+    Vue.prototype.$otHeaders = api.headers
+
+    Vue.component('object-trafic-lite', ObjectTraficLite);
   }
 };
 
