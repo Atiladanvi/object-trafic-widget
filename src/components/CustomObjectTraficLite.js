@@ -9,7 +9,7 @@ export default {
   props:{
     background: {
       type: String,
-      default: 'transparent'
+      default: '#eff9fcb3'
     },
     model: {
       type: String,
@@ -55,32 +55,66 @@ export default {
     translateLabels(){
       return this.labels.map(el =>{
         if (this.interval === 'week'){
-          return this.dictionary.translate('days', 'abreviation', el )
+          let lb = el.split("-")
+          return `${this.dictionary.translate('days', 'abreviation', lb[0])} ${lb[1]}`
         }
         if (this.interval === 'month'){
           let lb = el.split("-")
           return `${this.dictionary.translate('months', 'abreviation', lb[0])} ${lb[1]}`
         }
       })
+    },
+    getMaxOfArray(numArray) {
+      return Math.max.apply(null, numArray);
     }
   },
   watch: {
     data:function (value) {
       this.renderChart({
-          labels: this.translateLabels(),
+        labels: this.translateLabels(),
           datasets: [
             {
               label: this.label,
               backgroundColor: this.background,
+              borderColor: '#23a8d878',
+              pointHoverBackgroundColor: '#fff',
               data: value
             },
           ]
-        },{
-          responsive: true,
-          maintainAspectRatio: false
+        },
+        {
+          maintainAspectRatio: false,
+          legend: {
+            display: true
+          },
+          scales: {
+            xAxes: [{
+              gridLines: {
+                drawOnChartArea: false
+              }
+            }],
+            yAxes: [{
+              ticks: {
+                beginAtZero: true,
+                maxTicksLimit: 5,
+                stepSize: Math.ceil(this.getMaxOfArray(value)),
+                max: this.getMaxOfArray(value) + this.getMaxOfArray(value) / 2
+              },
+              gridLines: {
+                display: true
+              }
+            }]
+          },
+          elements: {
+            point: {
+              radius: 0,
+              hitRadius: 10,
+              hoverRadius: 4,
+              hoverBorderWidth: 3
+            }
+          }
         }
       )
-
     }
   }
 }
