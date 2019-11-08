@@ -4,7 +4,7 @@ import axios from 'axios'
 const makeAPi = function(config) {
   return axios.create({
     baseURL: config.baseUrl,
-    timeout: 1000,
+    timeout: 5000,
     headers: config.headers
   });
 }

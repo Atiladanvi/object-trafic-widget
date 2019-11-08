@@ -1,4 +1,4 @@
-# vue-object-trafic 0.1.0
+# vue-object-trafic 0.1.1
 
 ## Project setup
 ```

@@ -78,7 +78,9 @@ export default {
               backgroundColor: this.background,
               borderColor: '#23a8d878',
               pointHoverBackgroundColor: '#fff',
-              data: value
+              data: value,
+              pointRadius: 5,
+              lineTension: 0,
             },
           ]
         },
